@@ -30,10 +30,20 @@ except ImportError:
     _USE_NIANNIAN = False
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
+_TOOLS_FULL = None
 def load_tool_schema(suffix=''):
-    global TOOLS_SCHEMA
+    global TOOLS_SCHEMA, _TOOLS_FULL
     TS = open(os.path.join(script_dir, f'assets/tools_schema{suffix}.json'), 'r', encoding='utf-8').read()
-    TOOLS_SCHEMA = json.loads(TS if os.name == 'nt' else TS.replace('powershell', 'bash'))
+    _TOOLS_FULL = json.loads(TS if os.name == 'nt' else TS.replace('powershell', 'bash'))
+    if _USE_NIANNIAN:
+        cfg_path = os.path.join(script_dir, 'niannian', 'config.json')
+        if os.path.exists(cfg_path):
+            cfg = json.loads(open(cfg_path, 'r', encoding='utf-8').read())
+            enabled = set(cfg.get('tools', {}).get('enabled', []))
+            if enabled:
+                TOOLS_SCHEMA = [t for t in _TOOLS_FULL if t.get('function', {}).get('name') in enabled]
+                return
+    TOOLS_SCHEMA = _TOOLS_FULL
 load_tool_schema()
 
 lang_suffix = '_en' if os.environ.get('GA_LANG', '') == 'en' else ''
