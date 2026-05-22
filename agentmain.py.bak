@@ -13,22 +13,6 @@ try:
 except Exception: pass
 from ga import GenericAgentHandler, smart_format, get_global_memory, format_error, consume_file
 
-# 念念：VPS 无头环境禁用浏览器
-if _USE_NIANNIAN:
-    niannian_config = os.path.join(script_dir, 'niannian', 'config.json')
-    if os.path.exists(niannian_config):
-        cfg = json.loads(open(niannian_config, 'r', encoding='utf-8').read())
-        if not cfg.get("browser", {}).get("enabled", True):
-            os.environ["NIANNIAN_NO_BROWSER"] = "1"
-            # Monkey-patch: 禁用浏览器驱动的懒加载
-            import ga
-            ga.first_init_driver = lambda: None
-try:
-    from niannian import NiannianHandler
-    _USE_NIANNIAN = True
-except ImportError:
-    _USE_NIANNIAN = False
-
 script_dir = os.path.dirname(os.path.abspath(__file__))
 def load_tool_schema(suffix=''):
     global TOOLS_SCHEMA
@@ -56,17 +40,6 @@ def get_system_prompt():
     with open(os.path.join(script_dir, f'assets/sys_prompt{lang_suffix}.txt'), 'r', encoding='utf-8') as f: prompt = f.read()
     prompt += f"\nToday: {time.strftime('%Y-%m-%d %a')}\n"
     prompt += get_global_memory()
-    # 念念：注入 SOUL/RULES/USER 到 system prompt
-    if _USE_NIANNIAN:
-        niannian_config = os.path.join(script_dir, 'niannian', 'config.json')
-        if os.path.exists(niannian_config):
-            cfg = json.loads(open(niannian_config, 'r', encoding='utf-8').read())
-            prompt += "\n\n## 念念最高规则（不可违反，代码级硬约束）\n"
-            prompt += json.dumps(cfg.get("RULES", {}), ensure_ascii=False, indent=2)
-            prompt += "\n\n## 念念身份（SOUL）\n"
-            prompt += json.dumps(cfg.get("SOUL", {}), ensure_ascii=False, indent=2)
-            prompt += "\n\n## 念念交互协议（USER）\n"
-            prompt += json.dumps(cfg.get("USER", {}), ensure_ascii=False, indent=2)
     return prompt
 
 class GenericAgent:
@@ -159,25 +132,13 @@ class GenericAgent:
             raw_query = self._handle_slash_cmd(raw_query, display_queue)
             if raw_query is None:
                 self.task_queue.task_done(); continue
-            
-            # 念念约束：检测"停"并触发紧急中断
-            if _USE_NIANNIAN:
-                from niannian.constraints import is_stop_command, emergency_stop, reset_stop, is_confirm_command
-                if is_stop_command(raw_query):
-                    emergency_stop()
-                    display_queue.put({'done': '⏸ 已中断一切操作。', 'source': source, 'turn': 0, 'outputs': []})
-                    self.task_queue.task_done(); continue
-                reset_stop()  # 新消息到来，重置
             self.is_running = True
             rquery = smart_format(raw_query.replace('\n', ' '), max_str_len=200)
             self.history.append(f"[USER]: {rquery}")
             
             sys_prompt = get_system_prompt() + getattr(self.llmclient.backend, 'extra_sys_prompt', '')
             if self.peer_hint: sys_prompt += f"\n[Peer] 用户提及其他会话/后台任务状态时: temp/model_responses/ (只找近期修改的文件尾部)\n"
-            if _USE_NIANNIAN:
-                handler = NiannianHandler(self, self.history, os.path.join(script_dir, 'temp'))
-            else:
-                handler = GenericAgentHandler(self, self.history, os.path.join(script_dir, 'temp'))
+            handler = GenericAgentHandler(self, self.history, os.path.join(script_dir, 'temp'))
             if self.handler and 'key_info' in self.handler.working: 
                 ki = re.sub(r'\n\[SYSTEM\] 此为.*?工作记忆[。\n]*', '', self.handler.working['key_info'])  # 去旧
                 handler.working['key_info'] = ki
