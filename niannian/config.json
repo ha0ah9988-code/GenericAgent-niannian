@@ -36,5 +36,22 @@
   "browser": {
     "enabled": false,
     "note": "VPS无头环境禁用浏览器，web_scan/web_execute_js 返回不可用"
+  },
+  "tools": {
+    "enabled": [
+      "terminal",
+      "file_read",
+      "file_write",
+      "file_patch",
+      "code_run",
+      "ask_user",
+      "update_working_checkpoint",
+      "start_long_term_update"
+    ],
+    "disabled": [
+      "web_scan",
+      "web_execute_js"
+    ],
+    "note": "VPS默认禁用浏览器工具。需要时移到 enabled 列表即可。"
   }
 }
