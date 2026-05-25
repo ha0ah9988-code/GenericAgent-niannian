@@ -523,18 +523,22 @@ class GenericAgentHandler(BaseHandler):
         if not query:
             return StepOutcome("[Error] query 不能为空", next_prompt="\n")
         try:
-            rag_script = os.path.join(os.path.dirname(__file__), "..", "niannian", "repo", "tools", "niannian-rag.py")
-            rag_script = os.path.abspath(rag_script)
+            ga_dir = os.path.dirname(os.path.abspath(__file__))
+            # 优先本仓库内 tools/
+            rag_script = os.path.join(ga_dir, "tools", "niannian-rag.py")
+            if not os.path.exists(rag_script):
+                rag_script = os.path.join(ga_dir, "..", "niannian", "repo", "tools", "niannian-rag.py")
             if os.path.exists(rag_script):
-                import subprocess
                 result = subprocess.run(
                     [sys.executable, rag_script, "search", query],
                     capture_output=True, text=True, timeout=60
                 )
                 if result.returncode == 0 and result.stdout.strip():
                     return StepOutcome(result.stdout.strip(), next_prompt="\n")
-            gbrain_script = os.path.join(os.path.dirname(__file__), "..", "niannian", "repo", "tools", "niannian-gbrain-search.py")
-            gbrain_script = os.path.abspath(gbrain_script)
+            # fallback: TF-IDF
+            gbrain_script = os.path.join(ga_dir, "tools", "niannian-gbrain-search.py")
+            if not os.path.exists(gbrain_script):
+                gbrain_script = os.path.join(ga_dir, "..", "niannian", "repo", "tools", "niannian-gbrain-search.py")
             if os.path.exists(gbrain_script):
                 result = subprocess.run(
                     [sys.executable, gbrain_script, query],

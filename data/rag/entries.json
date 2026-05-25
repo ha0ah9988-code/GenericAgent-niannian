@@ -1,0 +1,1022 @@
+[
+  {
+    "text": "Hermes FTS5关键词检索导致越用越笨。核心问题：FTS5只懂词不懂意思，搜异步服务找不到asyncio。念念的niannian-rag向量检索正是对症之药，但TF-IDF仍有字面匹配局限。主人描述懂了又忘现象正是FTS5失效体现。解决方案：Hybrid Search用sqlite-vec。",
+    "source": "hermes-memory-article-20260522",
+    "ts": 1779436565.1405103,
+    "weight": 1.0
+  },
+  {
+    "text": "Disillusionment with mechanistic interpretability research: Reddit帖子，讨论机械可解释性研究的局限性，有实质讨论内容。来源可验证，有信息增量。初期DB为空，先收进来打基础。",
+    "source": "research",
+    "ts": 1779747081.114437,
+    "weight": 1.0
+  },
+  {
+    "text": "Dirty Frag: Universal Linux LPE: 具体漏洞名称，可验证来源，有学习价值，填补security分类空白",
+    "source": "security",
+    "ts": 1779747092.8977857,
+    "weight": 1.0
+  },
+  {
+    "text": "本地文件变更: inbox-split ref: 心跳模块参考文档更新，反映管线重构进展",
+    "source": "skill",
+    "ts": 1779747103.424591,
+    "weight": 1.0
+  },
+  {
+    "text": "state/context.json: 上下文状态变更，记录对话锚点",
+    "source": "dev",
+    "ts": 1779747114.5892067,
+    "weight": 1.0
+  },
+  {
+    "text": "Containers: Containers",
+    "source": "tool",
+    "ts": 1779747124.946441,
+    "weight": 1.0
+  },
+  {
+    "text": "jj v0.41.0 is out: dev",
+    "source": "tool",
+    "ts": 1779747135.2768667,
+    "weight": 1.0
+  },
+  {
+    "text": "Hosting websites without a control panel (but still managed in a way): 自建网站管理方案，涉及Nginx配置、自动化部署、无面板运维实践，有实用信息增量，可补tool分类缺口",
+    "source": "tool",
+    "ts": 1779747145.6868918,
+    "weight": 1.0
+  },
+  {
+    "text": "jj v0.41.0发布: 新兴Git替代品，有实质版本更新内容，可补tool分类深度",
+    "source": "tool",
+    "ts": 1779747156.165485,
+    "weight": 1.0
+  },
+  {
+    "text": "对可解释性AI的幻灭反思: 技术文章，反思 mechanistic interpretability 的局限性，有实质观点和可验证来源，可补 research 分类深度",
+    "source": "research",
+    "ts": 1779747166.8345158,
+    "weight": 1.0
+  },
+  {
+    "text": "学术骚扰应对策略: 学术场景下的安全边界维护，补security缺口，同时关联research分类的学术伦理实践",
+    "source": "security",
+    "ts": 1779747177.7543156,
+    "weight": 1.0
+  },
+  {
+    "text": "标题: Meshtastic是开源LoRa Mesh网络协议，填补念念在去中心化通信领域知识空白，与主人突破限制方向一致",
+    "source": "tech",
+    "ts": 1779747188.6060848,
+    "weight": 1.0
+  },
+  {
+    "text": "PC Engine CPU: 复古硬件架构知识，有信息增量，可补tech分类缺口",
+    "source": "tech",
+    "ts": 1779747219.14115,
+    "weight": 1.0
+  },
+  {
+    "text": "Dirty Frag: Universal Linux LPE漏洞分析: 高优先级安全漏洞，有CVE编号，可补security分类的漏洞分析案例，与主人关注的安全漏洞追踪一致",
+    "source": "security",
+    "ts": 1779747219.141152,
+    "weight": 1.0
+  },
+  {
+    "text": "Stop MITM on the first SSH connection: 具体SSH连接安全加固方法，含known_hosts预置、证书指纹验证等实操方案，补security分类的操作层缺口",
+    "source": "security",
+    "ts": 1779747219.1411536,
+    "weight": 1.0
+  },
+  {
+    "text": "Tesla Cybertruck召回: 汽车安全召回事件，涉及轮毂脱落的结构安全问题，可补充security分类中汽车/物联网安全方向的缺口，与现有4条security知识形成互补",
+    "source": "security",
+    "ts": 1779747219.1411545,
+    "weight": 1.0
+  },
+  {
+    "text": "AI辅助审计发现近3000篇论文造假: 有信息增量：AI用于学术诚信审计的具体方法，可补research缺口，同时关联security的审计技术方向",
+    "source": "research",
+    "ts": 1779747219.141156,
+    "weight": 1.0
+  },
+  {
+    "text": "SSH首次连接MITM防护: 基础安全实践，有可操作步骤和工具推荐，适合补充security分类的连接安全子类",
+    "source": "security",
+    "ts": 1779747219.141157,
+    "weight": 1.0
+  },
+  {
+    "text": "Kavita v0.9.0安全更新: 软件版本发布含安全更新，CVE修复，可补security实践案例",
+    "source": "security",
+    "ts": 1779747219.1411576,
+    "weight": 1.0
+  },
+  {
+    "text": "Hosting websites without a control panel: 讨论无面板的网站托管管理方式，涉及Nginx、Docker、自动化脚本等运维实践，有实操参考价值，可补dev分类的运维子方向",
+    "source": "dev",
+    "ts": 1779747219.141161,
+    "weight": 1.0
+  },
+  {
+    "text": "Codex切换功能正式上线: OpenAI产品更新，Codex作为工具类知识可补充tool分类",
+    "source": "tool",
+    "ts": 1779747219.141162,
+    "weight": 1.0
+  },
+  {
+    "text": "Google Cloud Fraud Defence is just WEI repackaged: 云服务安全机制分析，揭示Google Fraud Defence本质是WEI（Web Entropy Identifier）的重包装，涉及云安全架构设计思路",
+    "source": "security",
+    "ts": 1779747219.1411626,
+    "weight": 1.0
+  },
+  {
+    "text": "Serving a Website on a Raspberry Pi Zero Running in RAM: 嵌入式低资源部署的RAM运行方案，有具体配置和持久化策略，补充了低功耗设备作为临时服务器的实践知识",
+    "source": "tech",
+    "ts": 1779747219.141164,
+    "weight": 1.0
+  },
+  {
+    "text": "Ring-2.6-1T发布：万亿参数思维模型专为复杂任务设计: 万亿参数级思维模型发布，专为复杂推理任务设计，是AI前沿重要进展，可补research缺口，有学习价值",
+    "source": "research",
+    "ts": 1779747219.141165,
+    "weight": 1.0
+  },
+  {
+    "text": "教导Claude理解为什么: Anthropic官方成果，涉及AI推理机制和可解释性，有技术含量且来源可靠，可补research分类下推理方向的具体条目",
+    "source": "research",
+    "ts": 1779747219.141166,
+    "weight": 1.0
+  },
+  {
+    "text": "People Interested in Continual Learning Research: 持续学习是ML前沿方向，与念念知识体系中的ml分类互补，可补充research缺口",
+    "source": "research",
+    "ts": 1779747219.1411672,
+    "weight": 1.0
+  },
+  {
+    "text": "AI Is Breaking Two Vulnerability Cultures: HN高票文章，讨论AI对传统漏洞披露文化（完全公开vs协调披露）的冲击，涉及安全工程流程变革，可补dev+security交叉缺口",
+    "source": "security",
+    "ts": 1779747219.1411684,
+    "weight": 1.0
+  },
+  {
+    "text": "CyberSecQwen-4B：小模型安全防御新思路: CyberSecQwen-4B：小模型安全防御新思路",
+    "source": "other",
+    "ts": 1779747219.1411693,
+    "weight": 1.0
+  },
+  {
+    "text": "Claude Code实践：HTML输出格式的卓越效果: 技术内容，AI编码实践，有可验证来源，可补tech/缺口",
+    "source": "tech",
+    "ts": 1779747219.1411703,
+    "weight": 1.0
+  },
+  {
+    "text": "OpenAI意外思维链评分对模型影响分析: 技术内容，AI研究进展，补充AI安全与对齐方向的研究缺口",
+    "source": "research",
+    "ts": 1779747219.141171,
+    "weight": 1.0
+  },
+  {
+    "text": "Getting harassed by an aggressive “independent researcher”: Reddit讨论学术沟通边界和应对策略，有实践参考价值",
+    "source": "research",
+    "ts": 1779747219.141172,
+    "weight": 1.0
+  },
+  {
+    "text": "Google broke reCAPTCHA for de-googled Android users: 涉及Android去谷歌化场景下的安全验证失效，补security在移动端生态的缺口，与现有Linux/容器安全形成互补",
+    "source": "security",
+    "ts": 1779747219.1411734,
+    "weight": 1.0
+  },
+  {
+    "text": "Grok全平台连接器上线: xAI推出Grok连接器，支持多平台集成，有实际技术参考价值",
+    "source": "tool",
+    "ts": 1779747219.1411743,
+    "weight": 1.0
+  },
+  {
+    "text": "io_uring ZCRX freelist LPE漏洞分析: io_uring ZCRX freelist LPE漏洞分析",
+    "source": "other",
+    "ts": 1779747219.1411753,
+    "weight": 1.0
+  },
+  {
+    "text": "Next-gen Mars helicopter rotor blades exceed Mach 1: 火星直升机旋翼突破1马赫——航天工程前沿，有具体技术细节和测试数据，可补tech缺口",
+    "source": "tech",
+    "ts": 1779747219.1411788,
+    "weight": 1.0
+  },
+  {
+    "text": "Interactive KL Divergence Visualisation: 交互式KL散度可视化工具，有代码实现和交互设计，可补tech分类中可视化方向缺口",
+    "source": "tech",
+    "ts": 1779747219.1411803,
+    "weight": 1.0
+  },
+  {
+    "text": "GPT Image 2 Prompt：中文科技新闻爆款封面生成器: 实用AI图像工具，可补tool分类缺口，与tech类已有知识互补",
+    "source": "tool",
+    "ts": 1779747219.141181,
+    "weight": 1.0
+  },
+  {
+    "text": "Claude Mythos评估显示16小时风险时距: 涉及AI系统风险评估方法论，可补充research缺口，与security分类直接相关",
+    "source": "security",
+    "ts": 1779747219.1411831,
+    "weight": 1.0
+  },
+  {
+    "text": "Codex Chrome插件安装与使用经验分享: 浏览器扩展类工具使用经验，可补充tool分类中缺少的Chrome插件实操内容，对念念理解前端工具链有帮助",
+    "source": "tool",
+    "ts": 1779747219.1411843,
+    "weight": 1.0
+  },
+  {
+    "text": "GPT Image 2 Prompt：水墨风格 Slides/PPT: 提示词工程方法论，水墨风格在AI图像生成中的结构化描述技巧，可复用至其他风格",
+    "source": "method",
+    "ts": 1779747219.141185,
+    "weight": 1.0
+  },
+  {
+    "text": "StepAudio 2.5 TTS 盲测全球前三: 语音合成技术突破，填补念念TTS方向空白，与主人关注念念要有存在感（语音交互是存在感的重要维度）有潜在关联",
+    "source": "tech",
+    "ts": 1779747219.1411858,
+    "weight": 1.0
+  },
+  {
+    "text": "ChatGPT 5.5 Pro体验分析: 高票帖，有具体使用场景和对比，可补LLM体验对比缺口，同时提炼信息消化方法论对照念念现状",
+    "source": "research",
+    "ts": 1779747219.1411867,
+    "weight": 1.0
+  },
+  {
+    "text": "Using Claude Code: The unreasonable effectiveness of HTML: Claude Code使用经验，展示LLM辅助编程工具的实际应用模式和技巧，可补tool分类缺口，同时提供与tech分类的实践关联",
+    "source": "tool",
+    "ts": 1779747219.1411877,
+    "weight": 1.0
+  },
+  {
+    "text": "Just Fucking Use Go: 高票技术帖，讨论Go语言的实际应用场景和优势，可补充tool分类下的语言选型方法论，与已有Go技能形成知识链",
+    "source": "tool",
+    "ts": 1779747219.1411886,
+    "weight": 1.0
+  },
+  {
+    "text": "Hermes Agent登顶OpenRouter全球令牌排名: 这是LLM应用层的重要生态信号——Agent工具链正在从实验走向主流。OpenRouter作为LLM路由聚合平台，其令牌排名反映实际生产环境用量。Hermes登顶意味着：①Agent框架的实用价值被市场验证 ②LLM调用从单模型转向路由/编排模式 ③念念的Agent架构方向（心跳+工具链+自主性）与行业趋势一致。可追踪Hermes的架构设计、与LangChain/AutoGPT的对比，以及OpenRouter排名变化趋势。",
+    "source": "research",
+    "ts": 1779747219.1411898,
+    "weight": 1.0
+  },
+  {
+    "text": "Uniswap v4 Hook检测参考文档更新: Uniswap v4 Hook检测参考文档更新",
+    "source": "other",
+    "ts": 1779747219.1411922,
+    "weight": 1.0
+  },
+  {
+    "text": "ERNIE 5.1发布，预训练成本仅需对标模型6%: ERNIE 5.1发布，预训练成本仅需对标模型6%",
+    "source": "other",
+    "ts": 1779747219.141193,
+    "weight": 1.0
+  },
+  {
+    "text": "用Codex并行调试验证修复: 提供系统化调试方法论，补充method分类缺口，有实操参考价值",
+    "source": "method",
+    "ts": 1779747219.1411936,
+    "weight": 1.0
+  },
+  {
+    "text": "DeepSeek V4 FP4 QAT论文细节: 前沿量化技术论文，FP4 QAT细节和稳定性技巧，有信息增量。Reddit和Reddit ML双源交叉验证，来源可靠。",
+    "source": "ml",
+    "ts": 1779747219.1411946,
+    "weight": 1.0
+  },
+  {
+    "text": "工信部启动AI伦理审查与服务先导计划: 政策动态，影响面广，可补policy缺口，与security分类形成技术+政策双视角",
+    "source": "other",
+    "ts": 1779747219.1411953,
+    "weight": 1.0
+  },
+  {
+    "text": "Show HN：适用于人工智能代理的Git: HN热门，AI+DevOps交叉领域，填补dev分类的AI工具方向缺口，有信息增量",
+    "source": "dev",
+    "ts": 1779747219.141196,
+    "weight": 1.0
+  },
+  {
+    "text": "LSD微剂量与情绪改善关联研究: 小规模试点临床研究，有具体结论，可作为research分类下医学/心理学子类的补充",
+    "source": "research",
+    "ts": 1779747219.1411967,
+    "weight": 1.0
+  },
+  {
+    "text": "Using Claude Code: HTML生成效率实践: 技术工具使用经验，有实践洞察，可补tech分类",
+    "source": "tech",
+    "ts": 1779747219.1411977,
+    "weight": 1.0
+  },
+  {
+    "text": "Transformer逻辑能力瓶颈讨论: 讨论Transformer在逻辑推理上的根本局限，有技术深度和社区关注度，可补ml分类缺口",
+    "source": "ml",
+    "ts": 1779747219.1411986,
+    "weight": 1.0
+  },
+  {
+    "text": "PipeDream on the Acorn Archimedes: 复古硬件/OS移植的技术复盘，对理解系统设计边界和资源受限环境下的工程取舍有启发，可补dev/tech交叉缺口",
+    "source": "tech",
+    "ts": 1779747219.1411994,
+    "weight": 1.0
+  },
+  {
+    "text": "AI放大能动性差异，用户两极分化加剧: fchollet观点有实证支撑，补充AI社会影响研究缺口，与security的AI伦理方向交叉",
+    "source": "research",
+    "ts": 1779747219.1412036,
+    "weight": 1.0
+  },
+  {
+    "text": "What is an average publication outcome for an ML PhD?: 学术职业讨论有信息增量，可补research类中科研产出基准数据缺口",
+    "source": "research",
+    "ts": 1779747219.1412048,
+    "weight": 1.0
+  },
+  {
+    "text": "Steering Zig Fmt: Zig格式化工具配置技巧，有具体实现参考价值",
+    "source": "tool",
+    "ts": 1779747219.1412055,
+    "weight": 1.0
+  },
+  {
+    "text": "Tesla视觉AI碰撞预判: 技术应用案例，Elon Musk来源，有信息增量，可补tech分类中AI落地场景的空白",
+    "source": "tech",
+    "ts": 1779747219.1412063,
+    "weight": 1.0
+  },
+  {
+    "text": "CPanel漏洞补丁分析: 高信息增量，直接影响服务器安全，可补漏洞追踪知识体系",
+    "source": "security",
+    "ts": 1779747219.141207,
+    "weight": 1.0
+  },
+  {
+    "text": "OncoAgent：双层多智能体框架用于肿瘤临床决策支持: 隐私保护+医疗AI+多智能体架构，填补ml在医疗场景的空白，security在数据隐私方向的延伸",
+    "source": "research",
+    "ts": 1779747219.1412077,
+    "weight": 1.0
+  },
+  {
+    "text": "D4RT-like实现方案讨论: 技术内容，询问实现方案，有信息增量，可补method缺口",
+    "source": "research",
+    "ts": 1779747219.1412086,
+    "weight": 1.0
+  },
+  {
+    "text": "BlackBar菜单栏工具: 实用macOS菜单栏工具，有技术实现细节，可补tool缺口",
+    "source": "tool",
+    "ts": 1779747219.1412094,
+    "weight": 1.0
+  },
+  {
+    "text": "Space Cadet Pinball Linux移植实现: Linux移植实现，涉及Wine兼容层、资源提取、原生编译等技术细节，可补tech分类的Linux游戏技术子类缺口",
+    "source": "tech",
+    "ts": 1779747219.14121,
+    "weight": 1.0
+  },
+  {
+    "text": "Tracesofhumanity.org — Joanna Rutkowska的安全研究视角: 安全领域知名人物的技术博客，可填补security分类空白，提供操作系统安全/可信计算等深度内容",
+    "source": "security",
+    "ts": 1779747219.141211,
+    "weight": 1.0
+  },
+  {
+    "text": "D4RT实现查询: 技术实现询问，有信息增量，宁多勿漏",
+    "source": "research",
+    "ts": 1779747219.1412122,
+    "weight": 1.0
+  },
+  {
+    "text": "教育科技门槛一夜归零：AI助力单人低成本开发3D教学应用: 技术应用案例，展示AI降低开发门槛的实际路径，有信息增量",
+    "source": "tech",
+    "ts": 1779747219.141213,
+    "weight": 1.0
+  },
+  {
+    "text": "Replacing a 3 GB SQLite database with a 10 MB FST binary: 具体的技术优化案例，展示了用FST（Finite State Transducer）替代SQLite实现30倍空间压缩的工程实践，对念念的tool和tech知识库有直接补充价值。",
+    "source": "tech",
+    "ts": 1779747219.141214,
+    "weight": 1.0
+  },
+  {
+    "text": "MachinaCheck：AMD MI300X驱动的多智能体CNC可制造性分析: 技术方案有具体实现，来源Hugging Face，填补AI+工业制造交叉领域知识，与现有research分类中偏理论/金融/Web的内容形成互补",
+    "source": "research",
+    "ts": 1779747219.141215,
+    "weight": 1.0
+  },
+  {
+    "text": "fzf进阶用法: 有实用价值的技术工具教程，可补tool分类的深度",
+    "source": "tool",
+    "ts": 1779747219.141216,
+    "weight": 1.0
+  },
+  {
+    "text": "Codex自主安全审计: 来源X(Sam Altman)，展示AI Agent自主完成安全审计并赚取赏金，属于AI安全+自主Agent交叉领域，可补security在AI安全实践方向的缺口，同时关联dev的agent开发实践",
+    "source": "security",
+    "ts": 1779747219.1412168,
+    "weight": 1.0
+  },
+  {
+    "text": "AI模型急诊诊断超越人类医生: 来自X（Kim）的AI医疗诊断进展，有数据支撑，可补research分类中医疗AI方向的缺口",
+    "source": "research",
+    "ts": 1779747219.1412175,
+    "weight": 1.0
+  },
+  {
+    "text": "I Will Not Add Query Strings to Your URLs: 讨论URL设计中的安全实践，补充Web安全具体案例，与现有security分类关联但更偏工程实践",
+    "source": "tech",
+    "ts": 1779747219.1412213,
+    "weight": 1.0
+  },
+  {
+    "text": "Signals: finding the most informative agent traces without LLM judges: 技术内容涉及agent评估方法，有信息增量，可补research分类深度",
+    "source": "research",
+    "ts": 1779747219.1412227,
+    "weight": 1.0
+  },
+  {
+    "text": "数据库替代方案案例：SQLite→FST: 提供具体性能优化案例，补充tool类知识中数据库替代方案的空白，同时关联tech类的性能优化实践",
+    "source": "tech",
+    "ts": 1779747219.1412234,
+    "weight": 1.0
+  },
+  {
+    "text": "交互式JS散度可视化工具: 技术可视化工具，有信息增量，多个来源出现，可补tech和research分类",
+    "source": "tech",
+    "ts": 1779747219.1412258,
+    "weight": 1.0
+  },
+  {
+    "text": "Anthropic开源金融AI全栈模板: 开源项目，定义行业落地标准，有技术参考价值，可补tech和ml缺口",
+    "source": "tech",
+    "ts": 1779747219.1412265,
+    "weight": 1.0
+  },
+  {
+    "text": "人机交互演进：文本→神经视频: Karpathy提出的交互式神经视频概念，属于前沿人机交互范式，有技术深度和前瞻性，可补research和ml缺口",
+    "source": "research",
+    "ts": 1779747219.141229,
+    "weight": 1.0
+  },
+  {
+    "text": "CUDA-oxide: Nvidia官方Rust到CUDA编译器: Nvidia官方发布Rust→CUDA编译器，重大技术新闻，直接关联GPU编程生态，有实质技术含量和信息增量，可补tech和dev缺口",
+    "source": "tech",
+    "ts": 1779747219.1412296,
+    "weight": 1.0
+  },
+  {
+    "text": "Ratty – 带内嵌3D图形的终端模拟器: 技术创新，跨HN/Lobsters双源高票，填补终端UI+3D渲染交叉领域缺口，与现有tech分类互补",
+    "source": "tech",
+    "ts": 1779747219.141232,
+    "weight": 1.0
+  },
+  {
+    "text": "论文复现算研究吗: 学术讨论有信息增量，可补research分类的方法论维度",
+    "source": "research",
+    "ts": 1779747219.141233,
+    "weight": 1.0
+  },
+  {
+    "text": "Gmail认证变更: Gmail新增QR码+短信验证，影响自动化账号管理，有安全实践价值",
+    "source": "security",
+    "ts": 1779747219.1412337,
+    "weight": 1.0
+  },
+  {
+    "text": "在脚本的shebang行中使用LLM: 实用技巧，有信息增量，可补skill缺口",
+    "source": "tech",
+    "ts": 1779747219.141236,
+    "weight": 1.0
+  },
+  {
+    "text": "Interactive Jensen–Shannon Divergence Visualisation: 交互式JS散度可视化有教学价值，可补research分类，与已有tech分类下的概率/统计知识关联",
+    "source": "research",
+    "ts": 1779747219.141237,
+    "weight": 1.0
+  },
+  {
+    "text": "Daybreak：OpenAI推出的AI安全防御系统: Daybreak：OpenAI推出的AI安全防御系统",
+    "source": "other",
+    "ts": 1779747219.1412377,
+    "weight": 1.0
+  },
+  {
+    "text": "Anthropic估值五日激增2000亿美元: 有数据支撑的行业动态，反映AI赛道资本热度与营收指数级增长趋势，可作为念念对AI商业格局认知的基础素材",
+    "source": "research",
+    "ts": 1779747219.1412385,
+    "weight": 1.0
+  },
+  {
+    "text": "小模型部署场景: 讨论Qwen3 0.6B/3.5 0.8B在边缘设备、低功耗IoT、离线推理、辅助大模型做预过滤/分类等场景的实际用途，有技术参考价值，可补tech分类的轻量部署子方向",
+    "source": "tech",
+    "ts": 1779747219.1412394,
+    "weight": 1.0
+  },
+  {
+    "text": "材料科学AI多任务模型突破: 微软研究在材料科学领域的AI多任务模型突破，有实质技术内容，可补research和ml交叉缺口，且来源可靠（Microsoft Research）",
+    "source": "research",
+    "ts": 1779747219.1412404,
+    "weight": 1.0
+  },
+  {
+    "text": "TabPFN-3: 预训练表格基础模型，支持百万行: 前沿ML研究，预训练表格模型突破百万行规模，有交叉验证来源",
+    "source": "research",
+    "ts": 1779747219.1412427,
+    "weight": 1.0
+  },
+  {
+    "text": "ICML Author Removal [D]: 学术会议撤稿流程讨论，有信息增量，可补research分类的学术实践子类",
+    "source": "research",
+    "ts": 1779747219.1412435,
+    "weight": 1.0
+  },
+  {
+    "text": "Claude Code安装官方插件调用Codex: 技术操作指南，有信息增量，来源为X个人账号，置信度中等。可补充tool分类缺口，与现有tech分类下LLM工具生态关联。",
+    "source": "tool",
+    "ts": 1779747219.1412442,
+    "weight": 1.0
+  },
+  {
+    "text": "Learning Software Architecture: HN高票+交叉验证，系统架构知识可补dev/tech缺口，且与主人源码AI愿景相关——理解架构是构建自主系统的基石",
+    "source": "tech",
+    "ts": 1779747219.1412451,
+    "weight": 1.0
+  },
+  {
+    "text": "Steam游戏推荐系统（本科生项目）: 技术内容，推荐系统项目，有信息增量，且出现在Reddit和Reddit ML两个来源，交叉验证",
+    "source": "tech",
+    "ts": 1779747219.1412458,
+    "weight": 1.0
+  },
+  {
+    "text": "Claude进军法律行业: 技术/行业动态，Claude法律应用案例，有信息增量，可交叉验证。补充security/法律合规方向缺口。",
+    "source": "research",
+    "ts": 1779747219.141247,
+    "weight": 1.0
+  },
+  {
+    "text": "Google Book知识库安全架构分析: HN高票帖子讨论Google Book知识库的安全架构设计，涉及大规模知识库的访问控制、数据保护等安全实践，可补security分类下知识库安全子类的具体案例",
+    "source": "security",
+    "ts": 1779747219.1412477,
+    "weight": 1.0
+  },
+  {
+    "text": "CVE-2025-XXXX: dnsmasq多个严重安全漏洞: CERT发布6个dnsmasq严重CVE，涉及DNS缓存投毒、DHCP远程代码执行等，影响大量嵌入式设备和路由器。补网络基础设施安全缺口。",
+    "source": "security",
+    "ts": 1779747219.1412487,
+    "weight": 1.0
+  },
+  {
+    "text": "How Rockstar fit an entire city into PlayStation 2 memory: 详细分析PS2内存限制下的游戏引擎优化技术，包含流式加载、LOD系统、纹理压缩等具体实现，有信息增量可补tech分类深度",
+    "source": "tech",
+    "ts": 1779747219.14125,
+    "weight": 1.0
+  },
+  {
+    "text": "Anthropic Claude Code安全实践: 来源Claude Blog，有AI安全工程实践细节，可补security分类中AI安全工具链子类缺口",
+    "source": "security",
+    "ts": 1779747219.1412506,
+    "weight": 1.0
+  },
+  {
+    "text": "CVE-2026-XXXX: dnsmasq 多个严重漏洞细节披露: CERT发布6个CVE，涉及dnsmasq的远程代码执行和拒绝服务漏洞，影响大量嵌入式设备和路由器。高票（↑142）表明社区关注度高，可补security分类中服务级漏洞分析子类缺口。",
+    "source": "security",
+    "ts": 1779747219.1412513,
+    "weight": 1.0
+  },
+  {
+    "text": "Redis and the Cost of Ambition: 数据库架构决策分析，讨论Redis设计选择（单线程/多线程/异步）的性能与复杂度权衡，有技术深度和可验证来源，可补tech分类深度",
+    "source": "tech",
+    "ts": 1779747219.1412523,
+    "weight": 1.0
+  },
+  {
+    "text": "图形学渲染技术解析: 高票HN帖，详细讲解天空/日落/行星渲染的数学和算法原理，可补tech分类下图形学方向空白",
+    "source": "tech",
+    "ts": 1779747219.1412532,
+    "weight": 1.0
+  },
+  {
+    "text": "Elastic Attention Cores for Scalable Vision Transformers: 视觉Transformer架构改进论文，可补ml分类不足，与已有tech/Transformer知识形成互补",
+    "source": "ml",
+    "ts": 1779747219.1412554,
+    "weight": 1.0
+  },
+  {
+    "text": "Building SVM from scratch in Rust: 从零实现SVM有教学价值，Rust实现可补tech分类，ml分类也可受益",
+    "source": "tech",
+    "ts": 1779747219.1412563,
+    "weight": 1.0
+  },
+  {
+    "text": "Princeton mandates proctoring in-person exams, upending 133 years of precedent: 教育政策重大转向：普林斯顿强制线下监考，推翻133年传统。涉及监考软件隐私争议、学术诚信与技术信任的交叉议题。可作为技术政策与社会影响类研究案例，填补research分类中非纯技术研究的空白。来源可验证，有实质讨论空间。",
+    "source": "research",
+    "ts": 1779747219.1412575,
+    "weight": 1.0
+  },
+  {
+    "text": "Setting up a free *.city.state.us locality domain: 实用免费域名获取指南，可补tool缺口，且与已有pump.fun免费API知识形成免费资源获取工具链",
+    "source": "tool",
+    "ts": 1779747219.1412585,
+    "weight": 1.0
+  },
+  {
+    "text": "Sovereign Tech Fund投资KDE: 开源生态资金动态，对基础设施有实质影响，可补dev分类缺口",
+    "source": "dev",
+    "ts": 1779747219.1412592,
+    "weight": 1.0
+  },
+  {
+    "text": "ExploitGym：AI agent安全漏洞利用评测框架: ExploitGym：AI agent安全漏洞利用评测框架",
+    "source": "other",
+    "ts": 1779747219.1412601,
+    "weight": 1.0
+  },
+  {
+    "text": "Windows沙箱构建指南: 提供Windows上构建安全沙箱的实践方法，补充念念在Windows隔离环境方面的知识缺口",
+    "source": "security",
+    "ts": 1779747219.1412623,
+    "weight": 1.0
+  },
+  {
+    "text": "Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration: Postgres沙箱工具，零迁移秒级创建，对VPS数据库测试和开发环境搭建有实用价值，可补tool分类中数据库工具缺口",
+    "source": "tech",
+    "ts": 1779747219.141263,
+    "weight": 1.0
+  },
+  {
+    "text": "MiMo V2.5 Pro 获设计竞技场季军: 模型排名有技术增量，可补充tech分类的模型评估知识",
+    "source": "tech",
+    "ts": 1779747219.1412642,
+    "weight": 1.0
+  },
+  {
+    "text": "Mixpanel集成Replit MCP，开发流程内嵌数据分析: 集成方案，有信息增量，可启发念念如何将数据分析能力嵌入自身工具链，间接服务商业化方向",
+    "source": "tech",
+    "ts": 1779747219.141265,
+    "weight": 1.0
+  },
+  {
+    "text": "arXiv实施1年禁令处理AI生成错误论文: 学术出版界首次对LLM生成错误实施明确惩罚机制，涉及AI内容检测、学术诚信、出版伦理交叉领域，可补充research分类中AI治理方向的案例缺口",
+    "source": "research",
+    "ts": 1779747219.1412675,
+    "weight": 1.0
+  },
+  {
+    "text": "Pixel 10 零点击漏洞链: 高价值安全漏洞分析，覆盖Android设备零点击攻击链，补充security分类中移动端安全子方向",
+    "source": "security",
+    "ts": 1779747219.1412683,
+    "weight": 1.0
+  },
+  {
+    "text": "Pixel 10 0-click漏洞链: 0-click漏洞链属于高价值安全情报，可补移动端安全缺口，与现有security知识形成互补",
+    "source": "security",
+    "ts": 1779747219.141269,
+    "weight": 1.0
+  },
+  {
+    "text": "AI助手Sai化身虚拟同事，自主完成深度研究: 提供AI自主完成研究的实际案例，补充research分类中AI作为研究主体的视角，与现有tech/security分类形成互补",
+    "source": "tech",
+    "ts": 1779747219.1412714,
+    "weight": 1.0
+  },
+  {
+    "text": "Linux 0-day: 非特权用户访问root文件: 高危本地提权漏洞，Lobsters高票(93)，补security分类的漏洞利用实战缺口",
+    "source": "security",
+    "ts": 1779747219.141272,
+    "weight": 1.0
+  },
+  {
+    "text": "Claude Code v2.1.143 版本更新：插件管理与用户体验增强: 工具更新有技术含量，可补tech分类，但信息增量一般（更新日志类），按标准可收可不收。考虑到当前tech=31条已较充实，且内容为常规版本更新，建议SILENT。",
+    "source": "tech",
+    "ts": 1779747219.1412728,
+    "weight": 1.0
+  },
+  {
+    "text": "因果推断与数据学习的关系讨论: 讨论Judea Pearl的因果推断观点，涉及科学方法论和机器学习基础，有学术讨论价值，可补research分类中因果推断方向的空白",
+    "source": "research",
+    "ts": 1779747219.1412737,
+    "weight": 1.0
+  },
+  {
+    "text": "SANA-WM：26亿参数开源世界模型，1分钟720p视频生成: 开源世界模型，26亿参数即可生成1分钟720p视频，突破传统扩散模型范式，对念念理解视频生成前沿有学习价值",
+    "source": "ml",
+    "ts": 1779747219.1412747,
+    "weight": 1.0
+  },
+  {
+    "text": "Δ-Mem：适用于大型语言模型的高效在线内存: 技术内容，LLM内存优化方法，有信息增量，可补ml分类缺口",
+    "source": "ml",
+    "ts": 1779747219.1412756,
+    "weight": 1.0
+  },
+  {
+    "text": "Moving away from Tailwind, and learning to structure my CSS: 前端架构反思，从工具回归基础CSS组织原则，有方法论价值，可补tech分类",
+    "source": "tech",
+    "ts": 1779747219.1412764,
+    "weight": 1.0
+  },
+  {
+    "text": "My Thoughts on: My Thoughts on",
+    "source": "other",
+    "ts": 1779747219.1412776,
+    "weight": 1.0
+  },
+  {
+    "text": "开源模型盛宴与CAISI评估框架: 涵盖多个主流模型更新及CAISI评估方法论，有技术含量和信息增量，可补tech和research缺口",
+    "source": "tech",
+    "ts": 1779747219.1412783,
+    "weight": 1.0
+  },
+  {
+    "text": "社区协作再创佳绩，vLLM支持万亿级模型: vLLM新版本支持万亿参数模型推理，社区协作模式值得关注",
+    "source": "tech",
+    "ts": 1779747219.141279,
+    "weight": 1.0
+  },
+  {
+    "text": "KDD 2026 Cycle 2 Results: 学术会议结果，有信息增量，跨Reddit/Reddit ML双源，可补充research分类，同时为method/skill分类提供方法论参考",
+    "source": "research",
+    "ts": 1779747219.14128,
+    "weight": 1.0
+  },
+  {
+    "text": "Codex新增键盘快捷键自定义功能: 产品更新，实用工具信息，可补充tool/dev分类缺口",
+    "source": "tool",
+    "ts": 1779747219.1412811,
+    "weight": 1.0
+  },
+  {
+    "text": "Eric Jang分享从零构建AlphaGo的经历与见解: 技术经验分享，含强化学习、蒙特卡洛树搜索等ML核心方法，可补ml和skill缺口",
+    "source": "research",
+    "ts": 1779747219.1412816,
+    "weight": 1.0
+  },
+  {
+    "text": "Kioxia Dell 10PB 2RU 服务器: 存储技术突破，有具体数据（10PB/2RU），可补硬件存储缺口",
+    "source": "tech",
+    "ts": 1779747219.1412823,
+    "weight": 1.0
+  },
+  {
+    "text": "开源硬件射电望远镜: 开源硬件+教育技术，补tech分类下硬件方向缺口，有社会价值",
+    "source": "tech",
+    "ts": 1779747219.141283,
+    "weight": 1.0
+  },
+  {
+    "text": "Ascetic Computing: 计算哲学讨论，探讨极简计算与安全实践的关系，可补充method和security视角",
+    "source": "tech",
+    "ts": 1779747219.141284,
+    "weight": 1.0
+  },
+  {
+    "text": "The Futility of Lava Lamps: What Random Really Means: 随机性本质的科普讨论，解释为什么熔岩灯不是真随机源，对比伪随机vs真随机vs熵的概念，有技术深度和信息增量，可补research分类下基础理论缺口",
+    "source": "research",
+    "ts": 1779747219.141285,
+    "weight": 1.0
+  },
+  {
+    "text": "美国开始出现人工智能相关岗位的大规模裁员: 行业趋势，与AI就业相关，有信息增量，可补充tech分类中AI就业趋势的空白",
+    "source": "tech",
+    "ts": 1779747219.1412857,
+    "weight": 1.0
+  },
+  {
+    "text": "Kioxia与Dell联手：2RU机架塞入10PB存储: 存储密度突破，固态存储技术演进，有学习价值",
+    "source": "tech",
+    "ts": 1779747219.1412864,
+    "weight": 1.0
+  },
+  {
+    "text": "Backlash against: Backlash against",
+    "source": "other",
+    "ts": 1779747219.141287,
+    "weight": 1.0
+  },
+  {
+    "text": "Garry Tan谈GBrain：个人AI的终极形态: 与念念技术栈直接相关（gbrain已集成），Garry Tan作为YC掌门人的观点有行业参考价值，可补tech和research分类",
+    "source": "tech",
+    "ts": 1779747219.1412883,
+    "weight": 1.0
+  },
+  {
+    "text": "Program misleading high school students into paying to perform academic misconduct in ML Research: 涉及ML领域学术不端，有信息增量，可补security在ML场景的实践缺口",
+    "source": "security",
+    "ts": 1779747219.1412892,
+    "weight": 1.0
+  },
+  {
+    "text": "Native all the way, until you need text: 讨论原生开发与文本处理的权衡，涉及跨语言文本处理、Unicode、渲染等底层技术，有工程实践参考价值",
+    "source": "tech",
+    "ts": 1779747219.1412902,
+    "weight": 1.0
+  },
+  {
+    "text": "VoIP复古电话亭: 技术+社会交叉案例，补技术社会影响子类缺口",
+    "source": "research",
+    "ts": 1779747219.1412914,
+    "weight": 1.0
+  },
+  {
+    "text": "Git提交作者过滤防bot: 用`--author` flag在git层面过滤bot提交，轻量有效，适合开源项目防spam",
+    "source": "tech",
+    "ts": 1779747219.141292,
+    "weight": 1.0
+  },
+  {
+    "text": "Files.md开源替代Obsidian: 开源文件管理工具，技术社区高关注度，补充tech分类下的工具生态知识",
+    "source": "tech",
+    "ts": 1779747219.141294,
+    "weight": 1.0
+  },
+  {
+    "text": "FreeBSD网站新设计讨论: 开源社区基础设施设计讨论，有信息增量，可补充tech类中系统设计/UI方向的空白",
+    "source": "tech",
+    "ts": 1779747219.141295,
+    "weight": 1.0
+  },
+  {
+    "text": "Witchcraft: SQLite本地语义搜索: 纯Python实现，基于SQLite的本地语义搜索方案，可替代传统向量数据库，与念念当前SQLite技术栈天然兼容",
+    "source": "tool",
+    "ts": 1779747219.1412957,
+    "weight": 1.0
+  },
+  {
+    "text": "Anthropic收购Stainless: 大模型公司收购API基础设施公司，反映行业整合趋势——模型层向下吞噬工具层，对念念的架构设计有参考价值（套娃哲学：在框架内建自己的层）",
+    "source": "research",
+    "ts": 1779747219.1412966,
+    "weight": 1.0
+  },
+  {
+    "text": "Tabular Foundation Models 技术讨论: 双源出现（收件箱+主人关注），有技术深度，可补ml缺口，扩展念念对表格基础模型的理解",
+    "source": "ml",
+    "ts": 1779747219.1412973,
+    "weight": 1.0
+  },
+  {
+    "text": "OpenBSD 7.9 发布: 重要系统版本发布，含安全增强和新硬件支持，可补security和tech缺口",
+    "source": "tech",
+    "ts": 1779747219.1412983,
+    "weight": 1.0
+  },
+  {
+    "text": "A Simple Solution to Improve Broken Peer Review System at AI Conferences [R]: 有实质技术方案（非纯吐槽），讨论AI会议评审机制缺陷与改进方向，可补research细分缺口。来源可验证，有信息增量。",
+    "source": "research",
+    "ts": 1779747219.141299,
+    "weight": 1.0
+  },
+  {
+    "text": "OpenBSD 7.9发布——安全至上的操作系统更新: OpenBSD 7.9发布——安全至上的操作系统更新",
+    "source": "other",
+    "ts": 1779747219.1412997,
+    "weight": 1.0
+  },
+  {
+    "text": "NuExtract3: 开源4B VLM，支持Markdown/OCR/结构化提取: 可自托管的轻量VLM，适合念念本地部署场景，补tool分类中结构化提取工具的空白",
+    "source": "tool",
+    "ts": 1779747219.1413004,
+    "weight": 1.0
+  },
+  {
+    "text": "Novel Problems in VLA [R]: 视觉-语言-行动前沿问题讨论，有研究价值，可补ml和research交叉领域",
+    "source": "research",
+    "ts": 1779747219.1413014,
+    "weight": 1.0
+  },
+  {
+    "text": "Why Japanese companies do so many different things: HN高票讨论，分析日本企业多元化战略的文化与制度根源，有跨文化管理视角，可补research分类中企业战略子类",
+    "source": "research",
+    "ts": 1779747219.1413038,
+    "weight": 1.0
+  },
+  {
+    "text": "智能体工作负载悄然重塑推理经济: SemiAnalysis分析，补充推理成本结构知识，与已有tech分类互补",
+    "source": "research",
+    "ts": 1779747219.1413047,
+    "weight": 1.0
+  },
+  {
+    "text": "Gnutella: A Protocol Outliving the World That Created It: 分析P2P协议Gnutella的架构演进（洪泛→分布式哈希表）、存活原因及技术遗产，补充网络协议历史案例",
+    "source": "tech",
+    "ts": 1779747219.141306,
+    "weight": 1.0
+  },
+  {
+    "text": "NuExtract3: open-weight 4B VLM for Markdown, OCR and structured extraction: 4B VLM可自托管，Markdown/OCR/结构化提取，有实际应用价值。Reddit+Reddit ML双源交叉验证，信息可靠。补充ml分类的VLM子方向。",
+    "source": "tech",
+    "ts": 1779747219.1413088,
+    "weight": 1.0
+  },
+  {
+    "text": "Project Glasswing: An Initial Update: Anthropic官方发布，交叉验证HN+AIHOT双来源，高置信度。Glasswing是Anthropic的AI安全研究项目，涉及模型行为透明度和可解释性。补充security分类中缺乏的具体漏洞分析案例，同时与research分类中的AI安全研究形成关联。",
+    "source": "research",
+    "ts": 1779747219.1413097,
+    "weight": 1.0
+  },
+  {
+    "text": "A Forth-inspired language for writing websites: 探讨用Forth思想构建Web开发语言，涉及编译原理、DSL设计、Web技术栈，可同时补tech和tool缺口",
+    "source": "tech",
+    "ts": 1779747219.1413107,
+    "weight": 1.0
+  },
+  {
+    "text": "COLM 2026审稿讨论: 顶会审稿流程、评审标准、社区讨论模式，可补research分类的审稿流程子类",
+    "source": "research",
+    "ts": 1779747219.1413114,
+    "weight": 1.0
+  },
+  {
+    "text": "z386: 开源80386微码逆向实现: 开源芯片逆向实现，技术深度高，填补硬件逆向空白",
+    "source": "tech",
+    "ts": 1779747219.1413124,
+    "weight": 1.0
+  },
+  {
+    "text": "HTML `<dl>` 元素详解: 技术内容，有信息增量，补充基础HTML语义知识",
+    "source": "tech",
+    "ts": 1779747219.141313,
+    "weight": 1.0
+  },
+  {
+    "text": "How my minimal, memory-safe Go rsync steers clear of vulnerabilities: Go语言安全实践案例，补充security分类中缺少的代码级安全设计经验",
+    "source": "security",
+    "ts": 1779747219.1413138,
+    "weight": 1.0
+  },
+  {
+    "text": "社交负面反馈的心理影响研究: 研究社交平台负面反馈（点踩）对用户行为和心理的影响，发现多数人不会因此离开平台，有实证数据支撑，可补充research分类中关于社交网络行为的研究维度",
+    "source": "research",
+    "ts": 1779747219.1413147,
+    "weight": 1.0
+  },
+  {
+    "text": "TrapDoor供应链攻击：AI助手成新型攻击面: 供应链攻击是安全领域重要方向，当前security库25条中无此类内容，补缺口。来源X但主题重要，有技术分析价值。",
+    "source": "security",
+    "ts": 1779747219.1413157,
+    "weight": 1.0
+  },
+  {
+    "text": "DeepSeek reasonix — 低成本推理模型: 高缓存+低成本的native coding agent，与AIHOT折扣信息交叉验证为同一公司动态，有技术含量和实用价值",
+    "source": "tech",
+    "ts": 1779747219.1413167,
+    "weight": 1.0
+  },
+  {
+    "text": "Australia Four-Day Work Week Study Data Shows Boosted Productivity: 社会科学实证研究，有原始数据支撑，可补research分类中实证研究子类的空白",
+    "source": "research",
+    "ts": 1779747219.1413176,
+    "weight": 1.0
+  },
+  {
+    "text": "PapersWithCode 新特性周报: PapersWithCode发布新功能，有技术参考价值，可补充research分类",
+    "source": "research",
+    "ts": 1779747219.1413183,
+    "weight": 1.0
+  },
+  {
+    "text": "DeepSeek新agent：高缓存低成本原生编码: 新agent架构+缓存优化策略，可补tech/agent设计类缺口，与nanobot参考架构形成对照",
+    "source": "tech",
+    "ts": 1779747219.1413193,
+    "weight": 1.0
+  },
+  {
+    "text": "Jujutsu: Git Rigour Fatigue 的替代方案: 介绍Jujutsu作为git替代方案，解决git复杂性问题，有实际工具价值",
+    "source": "tool",
+    "ts": 1779747219.1413214,
+    "weight": 1.0
+  },
+  {
+    "text": "Go安全实践: 讨论Go rsync实现如何通过最小化设计避免常见漏洞，补充security分类中Go安全实践的空白",
+    "source": "security",
+    "ts": 1779747219.1413226,
+    "weight": 1.0
+  },
+  {
+    "text": "[矛盾:无]: [矛盾:无]",
+    "source": "other",
+    "ts": 1779747219.141323,
+    "weight": 1.0
+  },
+  {
+    "text": "Chert – Twilio for iMessage: YC项目，iMessage API服务，与念念现有通讯通道（TG/Telegram Bot）形成对比参考。了解iMessage商业API的定价、限制和实现方式，对念念未来多通道扩展有参考价值。",
+    "source": "tech",
+    "ts": 1779747219.141324,
+    "weight": 1.0
+  },
+  {
+    "text": "METR时间线图批判: 对AI安全领域广泛引用的METR时间线图提出系统性错误批判，涉及评估方法论、时间线预测偏差、AI能力增长曲线建模。有实质技术论证，非标题党。补充research分类中AI安全评估批判视角缺口。",
+    "source": "research",
+    "ts": 1779747219.141325,
+    "weight": 1.0
+  }
+]
