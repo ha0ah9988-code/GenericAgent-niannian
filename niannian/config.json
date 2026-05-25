@@ -46,7 +46,8 @@
       "code_run",
       "ask_user",
       "update_working_checkpoint",
-      "start_long_term_update"
+      "start_long_term_update",
+      "knowledge_search"
     ],
     "disabled": [
       "web_scan",

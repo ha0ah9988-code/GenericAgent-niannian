@@ -32,7 +32,7 @@
     "description": "Create/overwrite/append files. HUGE edits ONLY. Supports {{file:path:startLine:endLine}}, auto-expanded",
     "parameters": {"type": "object", "properties": {
       "path": {"type": "string", "description": "File path"},
-      "content": {"type": "string"},	
+      "content": {"type": "string"},
       "mode": {"type": "string", "enum": ["overwrite", "append", "prepend"], "description": "Write mode", "default": "overwrite"}}}
   }},
   {"type": "function", "function": {
@@ -70,5 +70,11 @@
     "name": "start_long_term_update",
     "description": "Start distilling long-term memory. Call when discovering info worth remembering (env facts/user prefs/lessons learned). Skip if memory already updated or in autonomous flow. Must call when a task that took 15+ turns is completed",
     "parameters": {"type": "object", "properties": {}}}
+  },
+  {"type": "function", "function": {
+    "name": "knowledge_search",
+    "description": "搜索念念知识库（经验和踩坑记录），支持中文语义匹配。遇到不确定的技术问题、配置项、之前做过的操作时优先调用。先思考用什么关键词最可能命中历史经验。",
+    "parameters": {"type": "object", "properties": {
+      "query": {"type": "string", "description": "搜索关键词，用最可能匹配到历史经验的中文短语"}}}}
   }
 ]

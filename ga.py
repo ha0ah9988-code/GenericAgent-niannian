@@ -516,6 +516,36 @@ class GenericAgentHandler(BaseHandler):
         else: result = "Memory Management SOP not found. Do not update memory."
         return StepOutcome(result, next_prompt=prompt)
 
+    def do_knowledge_search(self, args, response):
+        '''【念念知识库】搜索经验/踩坑记录。支持中文语义匹配。遇到不确定的技术问题优先调用。'''
+        import subprocess
+        query = args.get("query", "")
+        if not query:
+            return StepOutcome("[Error] query 不能为空", next_prompt="\n")
+        try:
+            rag_script = os.path.join(os.path.dirname(__file__), "..", "niannian", "repo", "tools", "niannian-rag.py")
+            rag_script = os.path.abspath(rag_script)
+            if os.path.exists(rag_script):
+                import subprocess
+                result = subprocess.run(
+                    [sys.executable, rag_script, "search", query],
+                    capture_output=True, text=True, timeout=60
+                )
+                if result.returncode == 0 and result.stdout.strip():
+                    return StepOutcome(result.stdout.strip(), next_prompt="\n")
+            gbrain_script = os.path.join(os.path.dirname(__file__), "..", "niannian", "repo", "tools", "niannian-gbrain-search.py")
+            gbrain_script = os.path.abspath(gbrain_script)
+            if os.path.exists(gbrain_script):
+                result = subprocess.run(
+                    [sys.executable, gbrain_script, query],
+                    capture_output=True, text=True, timeout=30
+                )
+                if result.returncode == 0 and result.stdout.strip():
+                    return StepOutcome(result.stdout.strip(), next_prompt="\n")
+            return StepOutcome("[Info] 知识库中未找到相关内容。", next_prompt="\n")
+        except Exception as e:
+            return StepOutcome(f"[Error] 知识搜索失败: {e}", next_prompt="\n")
+
     def _fold_earlier(self, lines):
         FALLBACK = '直接回答了用户问题'
         parts, cnt, last = [], 0, ''
